@@ -1,0 +1,31 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#first {
+    color: brown;
+}
+
+#second{
+    color: crimson;
+
+}
+.third{
+    color:hotpink
+
+}
+.golden{
+
+    color: darkgoldenrod;
+}
+#fifth{
+    color: darkmagenta;
+}
+
+.bigger{
+    font-size: larger;
+}
+
+main .golden{
+    font-family:fantasy
+}
