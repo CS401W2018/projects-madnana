@@ -17,3 +17,14 @@ main{
 
     color: #78B7D0;
 }
+
+footer{
+
+    color:#FFDC7F;
+}
+
+.bolder{
+
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
