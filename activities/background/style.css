@@ -2,7 +2,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(0, 0, 0);
     background-color:#faebd7;
-    background-image: url('predio.jpeg') #faebd7; 
+    background: url('predio.jpeg') #faebd7;
+    background-size: cover; 
 }
 
 nav a{
@@ -14,5 +15,5 @@ nav a{
 }
 
 header{
-    background: url(predio.jpg);
+    background: url(predio.jpeg);
 }
