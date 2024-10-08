@@ -2,5 +2,18 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(0, 0, 0);
     background: url('capa.jpeg') #faebd7;
-    background-size: cover; 
+
+}
+
+header{
+    background: url('bandeira.jpg') top right no-repeat;
+}
+main{
+
+    font-weight: bold;
+}
+
+.list{
+
+   list-style-image:url("image.png");
 }
