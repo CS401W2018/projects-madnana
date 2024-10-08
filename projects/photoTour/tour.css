@@ -1,7 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(0, 0, 0);
-    background: url('capa.jpeg') #faebd7;
+    color:#232368;
+    background: url('capa.jpg') #faebd7;
 
 }
 
@@ -9,11 +9,19 @@ header{
     background: url('bandeira.jpg') top right no-repeat;
 }
 main{
-
-    font-weight: bold;
+    
+    font-family:fantasy;
 }
 
 .list{
 
    list-style-image:url("image.png");
+}
+
+nav a{
+    color:red;
+}
+
+.current{
+    color:purple;
 }
