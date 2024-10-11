@@ -1,0 +1,47 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    width:700px;
+    background-color: bisque;
+}
+
+#catpic{
+    width:250px;
+    border: thin solid black;
+    float:right;
+}
+
+#catpic img{
+    width:250px;
+}
+
+.clear{
+    clear: both;
+}
+
+nav ul{
+    list-style-type: none;
+    padding:0;
+}
+
+nav li{
+    display:inline;
+}
+
+nav a{
+    display:block;
+    background-color: beige;
+    color:black;
+    border-bottom: thin solid white;
+    padding:10px 20px;
+    margin-left: 10px;
+    float: left;
+
+}
+
+nav a:hover{
+    color:beige;
+    background-color: blue;
+}
