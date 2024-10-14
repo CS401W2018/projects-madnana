@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #257180;
+    background-color: #F2E5BF;
+}
+
+header {
+    width: 100%;
+    background-image: url('popcorn.jpg'); 
+    background-size: cover; 
+    background-origin: padding-box; 
+    background-clip: border-box; 
+    color: #F2E5BF;
+    text-shadow: 2px 2px 3px black;
+    padding: 20px; 
+    text-align: center; 
+    font-family: 'Georgia', serif; 
+    
+}
+
+.wrapper {
+    width: 80%; /* Adjust width as necessary */
+    max-width: 800px; /* Limit maximum width */
+    margin: 0 auto; /* Center the wrapper */
+}
+
+#moviespic {
+    width: 200px;
+    border: thin solid black;
+    float: right;
+    
+}
+
+
+#movies img {
+    width: auto;
+    height: auto;
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: block;
+    background-color: #CB6040;
+    color: #F2E5BF;
+    padding: 10px 50px;
+    margin-left:5px;
+    float: left;
+    text-transform: uppercase; 
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px black; 
+    
+}
+
+nav a:hover {
+    color: beige;
+    background-color: red;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+footer {
+    background-color: #FD8B51;
+    color: #F2E5BF;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 15px; 
+    border-radius: 10px;
+}
+
+/*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
