@@ -1,29 +1,32 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #257180;
-    background-color: #F2E5BF;
+    background-color: #CB6040;
 }
 
 header {
-    width: 100%;
+    width: 0 auto;
     background-image: url('popcorn.jpg'); 
     background-size: cover; 
-    background-origin: padding-box; 
-    background-clip: border-box; 
     color: #F2E5BF;
     text-shadow: 2px 2px 3px black;
     padding: 20px; 
     text-align: center; 
-    font-family: 'Georgia', serif; 
+    font-family: 'Georgia', serif;
+    font-style:normal;
+    margin: 0 auto;
     
 }
 
-.wrapper {
-    width: 100px;
-    padding: 10px 0;
+#wrapper {
+    width: 800px;
+    padding: 0 0px 0px 0px;
     margin:  0 auto;
-    background-color: #CB6040;
-    border: #000;
+    background-color: #F2E5BF;
+}
+
+#wrapper2 {
+    padding: 0 10px 90px 10px;
 }
 
 #moviespic {
@@ -58,7 +61,7 @@ nav a {
     display: block;
     background-color: #CB6040;
     color: #F2E5BF;
-    padding: 10px 50px;
+    padding: 10px 40px;
     margin-left:5px;
     float: left;
     text-transform: uppercase; 
@@ -67,23 +70,20 @@ nav a {
     font-weight: bold;
     line-height: 1.5;
     text-shadow: 1px 1px 2px black; 
-    
+    border-radius: 10px;
 }
 
 nav a:hover {
     color: beige;
     background-color: red;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 4px 8px black; 
 }
 
 footer {
-    background-color: #FD8B51;
+
     color: #F2E5BF;
     text-align: center;
     padding: 10px;
-    margin-top: 30px;
+    margin: 0 auto;
     font-size: 15px; 
-    border-radius: 10px;
 }
-
-/*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
