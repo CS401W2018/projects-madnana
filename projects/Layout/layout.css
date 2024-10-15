@@ -87,3 +87,39 @@ footer {
     margin: 0 auto;
     font-size: 15px; 
 }
+@media screen and (max-width: 800px) and (min-width: 10px) {
+    #wrapper {
+        width: 100%; 
+        padding: 0 10px; 
+    }
+
+    header {
+        padding: 10px; 
+    }
+
+    nav a {
+        padding: 10px 20px; 
+        margin: 5px 0; 
+        width: 100%;
+        text-align: center; 
+    }
+
+    nav li {
+        display: block; 
+    }
+    
+    #moviespic {
+    width: 200px;
+    border: thin solid black;
+    float: right;
+    
+    }
+
+
+    #movies img {
+    width: auto;
+    height: auto;
+    }
+
+
+}
