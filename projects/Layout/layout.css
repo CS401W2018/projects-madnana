@@ -5,7 +5,6 @@ body {
 }
 
 header {
-    width: 0px auto;
     background-image: url('popcorn.jpg'); 
     background-size: cover; 
     color: #F2E5BF;
