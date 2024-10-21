@@ -1,12 +1,16 @@
 body{
     background-color: #EEEEEE;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
 }
 
 header{
     background-color:#3B1E54;
     color: aliceblue;
-    padding-left: 2%;
+    padding: 10px 10px;
+    margin: 0;
+}
+header h1{
     margin: 0;
 }
 .container{
@@ -21,21 +25,22 @@ header{
 
 .sidebar {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     row-gap: 5px;
+    height: 100%;
+    background-color: #9B7EBD;
 }
 
 
 aside {
-    width: 70%;
-    background-color: #9B7EBD;
+    width: 20%;
     padding: 20px;
     box-sizing: border-box;
+    height: 100%;
 }
 
 main{
     padding-left: 2%;
+    background-color: #D4BEE4;
 }
 nav{
     margin: 0;
@@ -45,14 +50,25 @@ nav{
 .profile{
     padding: 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px; 
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 5px; 
 }
 
-.item {
-    border: 1px solid #2f2f2f;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px #0000001a;
+.catpic {
+    width: 200px;
+    border: thin solid black;
+    float: right;
+    box-shadow: 2px 2px 3px black;
+    
+    
+}
+
+.links{
+    background-color:#9B7EBD;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:inherit;
     text-align: center;
 }
+
