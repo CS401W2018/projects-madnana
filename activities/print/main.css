@@ -37,8 +37,10 @@ nav a:hover{
 }
 
 .list{
-    display: flex;
+    /*!important*/
+    display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .cat p{
     padding-left: 3%;
@@ -50,3 +52,51 @@ nav a:hover{
 .cat img{
     width: 100%;
 }
+
+.cat-center p{
+    padding-left: 3%;
+}
+.cat-center h2{
+    padding-left: 3%;
+}
+
+.cat-center img{
+    width: 100%;
+}
+.cat-center{
+    width: 250px;
+    border: thin solid black;
+    box-shadow: 5px 5px 0 #474747; 
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 650px){
+    body{
+        background-color: rgb(167, 81, 81);
+    }
+
+    header{
+        background-color: blueviolet;
+    }
+
+    nav{
+        background-color:cadetblue;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    nav a{
+
+        border-bottom: thin solid black;
+        color:black;
+    }
+    .list{
+        width: 100%;
+        margin:10px;
+    }
+    .cat-center{
+        order: -1;
+    }
+}
+    
