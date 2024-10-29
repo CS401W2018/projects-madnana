@@ -37,8 +37,60 @@ aside figure{
     margin: 0;
 }
 
-.main{
-    display: flex;
-    gap:30px;
+aside figure img{
+    width: 100%;
+}
+
+.column {
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    border: thin solid black;
+    box-shadow: 5px 5px 0 #474747; 
+    margin: 10px;
+}
+
+.row {
+    display:flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+.division{
+    display: flex;
+}
+
+@media only screen and (max-width: 700px){
+
+    header{
+        text-align: center;
+    }
+
+    .division{
+        flex-direction: column;
+        text-align: center;
+        flex-direction: column-reverse;
+
+    }
+    nav{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+        
+    nav a{
+
+        border-bottom: thin solid black;
+        color:black;
+    }
+    .row {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-top: 10px; 
+    }
+}
+    
