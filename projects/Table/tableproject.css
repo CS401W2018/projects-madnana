@@ -36,6 +36,7 @@ nav a:hover{
 }
 
 .rate{
+    margin-top: 20px;
     border-spacing: 15px;
     border-collapse: collapse;
     caption-side: bottom;
