@@ -1,16 +1,35 @@
 
 body{
     background-color:#F5E7B2;
+    margin:0;
+
+}
+
+header{
+    background-color:#F9D689;
+    padding: 10px 20px;
+
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    /*color i liked #F9D689*/
+    padding: 15px;
+    background-color: #ddbd77;
 }
 
+nav a{
+    color:#000000;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
 .side{
     display: flex;
+    flex-direction: row-reverse;
+
 }
 
 body{
@@ -26,6 +45,7 @@ body{
     border-collapse: collapse;
     caption-side: bottom;
     box-shadow: 10px 9px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #000000;
 }
 
 .rate thead{
@@ -38,6 +58,10 @@ body{
     background-color: #E0A75E;
 }
 
+.rate tbody tr:nth-child(even){
+    background-color: #F9D689;
+}
+
 .rate td {
     padding: 15px;
 }
@@ -47,4 +71,15 @@ body{
     color: white;
     font-weight: bold; 
     text-align: center;
+}
+
+aside{
+    width: 40%;
+    padding: 1%;
+
+}
+
+aside p{
+    
+    text-align: end; 
 }
