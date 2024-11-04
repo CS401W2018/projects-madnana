@@ -1,0 +1,50 @@
+
+body{
+    background-color:#F5E7B2;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /*color i liked #F9D689*/
+}
+
+.side{
+    display: flex;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rate caption{
+    text-align: left;
+}
+
+.rate{
+    border-spacing: 15px;
+    border-collapse: collapse;
+    caption-side: bottom;
+    box-shadow: 10px 9px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rate thead{
+    background-color: #973131;
+    color: white;
+}
+
+
+.rate tbody tr:nth-child(odd){
+    background-color: #E0A75E;
+}
+
+.rate td {
+    padding: 15px;
+}
+
+.rate tfoot {
+    background-color: #973131; 
+    color: white;
+    font-weight: bold; 
+    text-align: center;
+}
