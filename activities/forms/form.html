@@ -13,47 +13,49 @@
     <main>
         <!--<form action="processing.html" methods= "get">-->
         <form action="processing.html" methods= "post">
-            First Name: <input type="text" name= "first" value=" Joe" required><br>
-            Last Name: <input type="text" name= "last" placeholder="Last Name"><br>
-            Password: <input type="password" name= "pass"><br>
-            <input type="checkbox" name="remember" checked>Remember me<br>
-            <input type="submit"><br>
-            <button type="button" onclick="alert('PIPIPI POPOPO')">Click Me!</button><br>
-            Class:<br>
-            <input type="radio" name="class" value="freshman">Freshman<br>
-            <input type="radio" name="class" value="sophomore">Sophmore<br>
-            <input type="radio" name="class" value="junior">Junior<br>
-            <input type="radio" name="class" value="senior">Senior<br>
-            Comments:<textarea name="comments"></textarea><br>
-            State:<select name="state">
+            <div class="form-row">
+                <label for="fname">First Name</label>
+                <input type="text" name= "first" required placeholder="First Name">
+            </div>    
+            <div class="form-row">
+                <label for="lname">Last Name</label>
+                <input type="text" name= "last" required placeholder="Last Name"><br>
+            </div>
+            <div class="form-row">
+                <label for="pass">Password:</label>
+                <input type="password" name= "pass" id="pass"><br>
+            </div>
+            <div class="form-row">
+                <label>
+                    <input type="checkbox" name="remember" checked>
+                    Remember Me
+                </label>
+            </div>
+            <div class="form-row">
+                Class:
+                <label><input type="radio" name="class" value="freshman">Freshman</label>
+                <label><input type="radio" name="class" value="sophomore">Sophmore</label>
+                <label><input type="radio" name="class" value="junior">Junior</label>
+                <label><input type="radio" name="class" value="senior">Senior</label>
+            </div>
+            <div class="form-row">
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="form-row">
+                <label for="State">State:</label>
+                <select name="state" id="state">
                 <option value="blank"></option>
                 <option value="hi">Hawaii</option>
                 <option value="ca">California</option>
                 <option value="ut">Utah</option>
                 <option value="co">Colorado</option>
-            </select><br>
-            <input type="submit">
-        
-
+            </select>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
         </form>
-        <p>
-            <strong>The form tag has an "action" attribute. What does it do?</strong>
-        </p>
-        <p>
-            Specifies where to send the form-data when a form is submitted.
-        </p>
-        <p>
-            <strong>The form tag has a "method" attribute. What does it do?</strong>
-        </p>
-        <p>
-            tells the web browser how to send form data to a server.
-        </p>
-        <p>
-            <strong>What is the difference between a "POST" and a "GET"?</strong>
-        </p>
-        <p> 
-            Use GET when you want to retrieve data and use POST when you want to submit data
-        </p>
    </main>
     <footer>
         <p>&copy; 2024 Natalia Madruga</p>
