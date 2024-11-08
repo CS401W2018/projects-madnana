@@ -13,49 +13,61 @@
     <main>
         <!--<form action="processing.html" methods= "get">-->
         <form action="processing.html" methods= "post">
-            <div class="form-row">
-                <label for="fname">First Name</label>
-                <input type="text" name= "first" required placeholder="First Name">
-            </div>    
-            <div class="form-row">
-                <label for="lname">Last Name</label>
-                <input type="text" name= "last" required placeholder="Last Name"><br>
-            </div>
-            <div class="form-row">
-                <label for="pass">Password:</label>
-                <input type="password" name= "pass" id="pass"><br>
-            </div>
-            <div class="form-row">
-                <label>
-                    <input type="checkbox" name="remember" checked>
-                    Remember Me
-                </label>
-            </div>
-            <div class="form-row">
-                Class:
-                <label><input type="radio" name="class" value="freshman">Freshman</label>
-                <label><input type="radio" name="class" value="sophomore">Sophmore</label>
-                <label><input type="radio" name="class" value="junior">Junior</label>
-                <label><input type="radio" name="class" value="senior">Senior</label>
-            </div>
-            <div class="form-row">
-                <label for="comments">Comments:</label>
-                <textarea name="comments" id="comments"></textarea>
-            </div>
-            <div class="form-row">
-                <label for="State">State:</label>
-                <select name="state" id="state">
-                <option value="blank"></option>
-                <option value="hi">Hawaii</option>
-                <option value="ca">California</option>
-                <option value="ut">Utah</option>
-                <option value="co">Colorado</option>
-            </select>
-            </div>
-            <div class="form-row">
-                <input type="submit">
-            </div>
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First Name</label>
+                    <input type="text" name= "first" required placeholder="First Name">
+                </div>    
+                <div class="form-row">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name= "last" required placeholder="Last Name"><br>
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name= "pass" id="pass"><br>
+                </div>
+                
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" checked>
+                        Remember Me
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="State">State:</label>
+                    <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="hi">Hawaii</option>
+                    <option value="ca">California</option>
+                    <option value="ut">Utah</option>
+                    <option value="co">Colorado</option>
+                </select>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    Class:
+                    <label><input type="radio" name="class" value="freshman">Freshman</label>
+                    <label><input type="radio" name="class" value="sophomore">Sophmore</label>
+                    <label><input type="radio" name="class" value="junior">Junior</label>
+                    <label><input type="radio" name="class" value="senior">Senior</label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
+        <p>
+            What are different ways to style your form?<br>
+            Using the css to specify any changes or styles you would like to make.<br>
+            Why does the professor like to use flex?<br>
+            It makes it easier to be mobile friendly.
+        </p>
    </main>
     <footer>
         <p>&copy; 2024 Natalia Madruga</p>

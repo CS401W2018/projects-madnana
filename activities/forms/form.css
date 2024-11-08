@@ -1,0 +1,65 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+fieldset{
+    background-color: azure;
+    box-shadow: 3px 3px 5px black;
+}
+
+legend{
+    background-color: cadetblue;
+    padding: 10px;
+    border: thin solid black
+}
+
+.form-row{
+    display: flex;
+    gap:10px;
+    margin-top: 10px;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+    
+}
+
+.spacer{
+    width:150px;
+}
+
+.form-row, .check-row{
+    display: flex;
+    gap:10px;
+    margin: 10px;
+}
+
+input[type="submit"]{
+    background-color: thistle;
+    color: black;
+    padding: 5px;
+    border:0;
+
+}
+
+input:not([type="submit"]){
+    background-color:#ddd;
+    color: black;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+input:not([type="submit"]):focus{
+    background-color: #fff;
+}
+@media only screen and (max-width:600px) {
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+    .form-row label, .spacer{
+        text-align: left;
+    }
+    
+
+}
