@@ -10,7 +10,7 @@ header{
 
 fieldset{
     background-color: #A5B68D;
-    box-shadow: 3px 3px 1px black;
+    box-shadow: 2px 3px 1px black;
 }
 
 legend{
@@ -21,8 +21,8 @@ legend{
 
 .form-fila{
     display: flex;
-    gap:10px;
-    margin-top: 10px;
+    gap:15px;
+    margin-top: 15px;
 }
 
 .form-fila label{
@@ -30,6 +30,7 @@ legend{
     text-align: right;
     
 }
+
 
 .espaco{
     width:150px;
@@ -77,6 +78,13 @@ input:not([type="submit"]){
 
 input:not([type="submit"]):focus{
     background-color: #fff;
+    
+}
+footer{
+    
+    background-color: #ECDFCC;
+    padding: 5px 5px;
+
 }
 @media only screen and (max-width:600px) {
     .form-fila, .check-row{
