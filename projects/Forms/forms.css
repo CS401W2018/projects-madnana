@@ -11,12 +11,14 @@ header{
 fieldset{
     background-color: #A5B68D;
     box-shadow: 2px 3px 1px black;
+
 }
 
 legend{
     background-color: #ECDFCC;
     padding: 10px;
     border: thin solid black
+    
 }
 
 .form-fila{
@@ -32,12 +34,15 @@ legend{
 }
 .espaco{
     width:150px;
+    
 }
 
 .form-fila, .check-row{
     display: flex;
     gap:10px;
     margin: 10px;
+    
+
 }
 
 textarea[type="submit"]{
@@ -58,12 +63,15 @@ textarea:not([type="submit"]){
 
 textarea:not([type="submit"]):focus{
     background-color: #fff;
+
+    
 }
 input[type="submit"]{
     background-color: #ECDFCC;
     color: black;
     padding: 5px;
     border:0;
+    border-radius: 15px;
 
 }
 
@@ -72,10 +80,12 @@ input:not([type="submit"]){
     color: black;
     padding: 10px;
     font-size: 1.2em;
+    border-radius: 15px;
 }
 
 input:not([type="submit"]):focus{
     background-color: #fff;
+    
     
 }
 
@@ -88,6 +98,7 @@ footer{
 @media only screen and (max-width:600px) {
     .form-fila, .check-row{
         flex-direction: column;
+        
     }
     .form-fila label, .espaco{
         text-align: left;
