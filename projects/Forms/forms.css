@@ -30,8 +30,6 @@ legend{
     text-align: right;
     
 }
-
-
 .espaco{
     width:150px;
 }
@@ -80,6 +78,7 @@ input:not([type="submit"]):focus{
     background-color: #fff;
     
 }
+
 footer{
     
     background-color: #ECDFCC;
