@@ -24,20 +24,31 @@
                 </div>
                 <div class="form-fila">
                     <label for="email">Email:</label>
-                    <input type="text" name= "email" id="email" required placeholder= "username@gmail.com"><br>
+                    <input type="email" name= "email" id="email" required placeholder= "username@gmail.com"><br>
                 </div>
                 <div class="form-fila">
                     <label for="phone">Phone Number:</label>
-                    <input type="text" name= "phone" id="phone"><br>
+                    <input type="tel" id="phone" name="phone" placeholder="8081234567" pattern="[0-9]{10}" required>
                 </div>
                 <div class="form-fila">
                 <label for="birthday">Birthdate:</label>
                 <input type="date" id="birthday" name="birthday">
                 </div>
                 <div class="form-fila">
-                    <label for="gender">Gender:</label>
-                    <input type="radio" name="class" value="female" id="female">Female
-                    <input type="radio" name="class" value="male" id="male">Male
+                    Gender:
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                </div>
+                <div class="form-fila">
+                <label for="state">What state are you currently in?</label>
+                    <select name="states" id="states">
+                        <option value="space"> </option>
+                        <option value="California">California</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="New York">New York</option>
+                        <option value="Utah">Utah</option> 
+                    </select>
                 </div>
                 <div class="form-fila">
                     <label for="comments">Why would you like to join our community:</label>
@@ -60,7 +71,7 @@
                 </div>
                 <div class="check-row">
                     <div class="espaco"></div>
-                        <label><input type="checkbox" id="check" required/> I agree to these <a href="#">Terms and Conditions</a>.</label>
+                        <label><input type="checkbox" id="check" required> I agree to these <a href="#">Terms and Conditions</a>.</label>
                 </div>
                 <div class="form-fila">
                     <div class="espaco"></div>
