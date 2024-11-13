@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="formu.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Reviews</h1>
+    </header>
+    <main>
+        <form action="processing.html" method= "post" id="myForm">
+            <fieldset>
+                <legend>Sign Up to know more!</legend>
+                <div class="form-fila">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name= "first" id="fname" required placeholder="First Name">
+                </div>
+                <div class="form-fila">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name= "last" id="lname" required placeholder="Last Name"><br>
+                </div>
+                <div class="form-fila">
+                    <label for="email">Email:</label>
+                    <input type="email" name= "email" id="email" required placeholder= "username@gmail.com"><br>
+                </div>
+                <div class="form-fila">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="8081234567" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-fila">
+                <label for="birthday">Birthdate:</label>
+                <input type="date" id="birthday" name="birthday">
+                </div>
+                <div class="form-fila">
+                    Gender:
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                </div>
+                <div class="form-fila">
+                    <label for="state">Current State you live in:</label>
+                    <select name="state" id="state">
+                    <option value="blank">Select a State</option>
+                    <option value="hi">Hawaii</option>
+                    <option value="ca">California</option>
+                    <option value="ut">Utah</option>
+                    <option value="co">Colorado</option>
+                    <option value="co">New York</option>
+                </select>
+                </div>
+                <div class="form-fila">
+                    <label for="comments">Why would you like to join our community:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-fila">
+                    <label for="pass">Password:</label>
+                    <input type="password" name= "pass" id="pass"><br>
+                </div>
+                <div class="form-fila">
+                    <label for="pass">Confirm Password:</label>
+                    <input type="password" name= "pass" id="password"><br>
+                </div>
+                <div class="check-row">
+                    <div class="espaco"></div>
+                    <label>
+                        <input type="checkbox" name="remember" checked>
+                        Remember Me
+                    </label>
+                </div>
+                <div class="check-row">
+                    <div class="espaco"></div>
+                        <label><input type="checkbox" id="check" required> I agree to these <a href="#">Terms and Conditions</a>.</label>
+                </div>
+                <div class="form-fila">
+                    <div class="espaco"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+        <p>
+            What is JavaScript? How did it get its name?<br>
+            <em>
+                JavaScript is a programming language used to make web pages interactive. also known as LiveScript, but was renamed JavaScript for marketing purposes to ride on the popularity of Java.
+            </em><br><br>
+            What are the two ways you can run JavaScript?<br>
+            <em>
+                In the browser, it runs on web pages to make them interactive.
+                On the server, it runs on the server to handle things like databases and API requests (using tools like Node.js).
+            </em><br><br>
+            What was the most popular front-end js library?<br>
+            <em>
+                jQuery was the most popular, making tasks like DOM manipulation and AJAX simpler.
+            </em><br><br>
+            What is the most popular front-end js library today?<br>
+            <em>React is the most popular now, used to build dynamic, reusable UI components with high performance.</em><br>
+        </p>
+   </main>
+    <footer>
+        <p>&copy; 2024 Natalia Madruga</p>
+    </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+            const first = document.getElementById('fname').value;
+            const last = document.getElementById('lname').value;
+            alert("Form Submitted");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+header{
+    background-color:#DA8359;
+    padding: 10px 20px;
+}
+
+fieldset{
+    background-color: #A5B68D;
+    box-shadow: 2px 3px 1px black;
+
+}
+
+legend{
+    background-color: #ECDFCC;
+    padding: 10px;
+    border: thin solid black
+    
+}
+
+
+select {
+    border-radius: 15px;
+    background-color: #ddd;
+}
+
+.form-fila{
+    display: flex;
+    gap:15px;
+    margin-top: 15px;
+}
+
+.form-fila label{
+    width: 150px;
+    text-align: right;
+    
+}
+.espaco{
+    width:150px;
+    
+}
+
+.form-fila, .check-row{
+    display: flex;
+    gap:10px;
+    margin: 10px;
+    
+
+}
+
+textarea[type="submit"]{
+    background-color: #ECDFCC;
+    color: black;
+    padding: 5px;
+    border:0;
+
+}
+
+textarea:not([type="submit"]){
+    background-color:#ddd;
+    color: black;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+textarea:not([type="submit"]):focus{
+    background-color: #fff;
+
+}
+
+select:focus{
+    background-color: #fff;
+
+}
+input[type="submit"]{
+    background-color: #ECDFCC;
+    color: black;
+    padding: 5px;
+    border:0;
+    border-radius: 15px;
+
+}
+
+input:not([type="submit"]){
+    background-color:#ddd;
+    color: black;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 15px;
+}
+
+input:not([type="submit"]):focus{
+    background-color: #fff;
+    
+    
+}
+
+footer{
+    
+    background-color: #ECDFCC;
+    padding: 5px 5px;
+
+}
+@media only screen and (max-width:600px) {
+    .form-fila, .check-row{
+        flex-direction: column;
+        
+    }
+    .form-fila label, .espaco{
+        text-align: left;
+    }
+
+}
