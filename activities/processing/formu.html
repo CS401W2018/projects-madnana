@@ -105,6 +105,23 @@
             event.preventDefault();
             const first = document.getElementById('fname').value;
             const last = document.getElementById('lname').value;
+            const age = document.getElementById('birthday').value;
+
+            if(!first||!last){
+                alert("You need a first and last name");
+                return;
+            }
+            if(!age||!age < 18){
+                alert("You must be 18");
+                return;
+            }
+            
+            const formData={
+                fname: first,
+                lname: last,
+                birthday: age
+            }
+            console.log(formData);
             alert("Form Submitted");
         })
     </script>
