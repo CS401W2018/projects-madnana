@@ -79,23 +79,6 @@
                 </div>
             </fieldset>
         </form>
-        <p>
-            What is JavaScript? How did it get its name?<br>
-            <em>
-                JavaScript is a programming language used to make web pages interactive. also known as LiveScript, but was renamed JavaScript for marketing purposes to ride on the popularity of Java.
-            </em><br><br>
-            What are the two ways you can run JavaScript?<br>
-            <em>
-                In the browser, it runs on web pages to make them interactive.
-                On the server, it runs on the server to handle things like databases and API requests (using tools like Node.js).
-            </em><br><br>
-            What was the most popular front-end js library?<br>
-            <em>
-                jQuery was the most popular, making tasks like DOM manipulation and AJAX simpler.
-            </em><br><br>
-            What is the most popular front-end js library today?<br>
-            <em>React is the most popular now, used to build dynamic, reusable UI components with high performance.</em><br>
-        </p>
    </main>
     <footer>
         <p>&copy; 2024 Natalia Madruga</p>
@@ -108,22 +91,39 @@
             const age = document.getElementById('birthday').value;
 
             if(!first||!last){
-                alert("You need a first and last name");
+                alert("First Name and Last Name cannot be blank.");
                 return;
             }
             if(!age||!age < 18){
-                alert("You must be 18");
+                alert("You must be 18 years or older to submit this form.");
                 return;
             }
             
             const formData={
                 fname: first,
                 lname: last,
-                birthday: age
-            }
+                birthday: age,
+                password: document.getElementById('password').value,
+                state: document.getElementById('state').value
+            };
+            
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST","submit.json", true);
+            xhr.setRequestHeader("Content-Type","application/json;charset=UTF-8");
+            xhr.onreadystatechange= function (){
+
+                if(xhr.readyState === 4 && xhr.status === 200){
+                    alert('Form submitted successfuly.');
+                }
+                else if (xhr.readyState === 4){
+                    alert('Error submitting the form.');
+                }
+            };
+            xhr.send(JSON.stringify(formData));
             console.log(formData);
-            alert("Form Submitted");
-        })
+            
+
+        });
     </script>
 </body>
 </html>
