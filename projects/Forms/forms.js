@@ -41,17 +41,19 @@ document.getElementById('meuForm').addEventListener('submit',function(event){
     };
     
     const xhr = new XMLHttpRequest();
-    xhr.open("POST","submit.json", true);
+    xhr.open("GET", "submition.json", true);
     xhr.setRequestHeader("Content-Type","application/json;charset=UTF-8");
     xhr.onreadystatechange= function (){
 
         if(xhr.readyState === 4 && xhr.status === 200){
             const response = JSON.parse(xhr.response);
             document.getElementById('message').innerHTML = response.message;
-            document.getElementById('myForm').innerHTML="";
+            document.getElementById('meuForm').innerHTML="";
         }
         else if (xhr.readyState === 4){
             alert('Error submitting the form.');
         }
     };
+    xhr.send(JSON.stringify(formData));
+    console.log(formData);
 });
