@@ -3,24 +3,41 @@ document.getElementById('myForm').addEventListener('submit',function(event){
     const first = document.getElementById('fname').value;
     const last = document.getElementById('lname').value;
     const age = document.getElementById('birthday').value;
+    const email = document.getElementById('email').value;
+    const state = document.getElementById('state').value;
+    const password = document.getElementById('pass').value;
+    const confirmpassword = document.getElementById('password').value;
 
-    if(!first||!last){
-        alert("First Name and Last Name cannot be blank.");
+
+
+
+    if(!first||!last||!email){
+        alert("First Name, Last Name and Email cannot be blank.");
         return;
 
     }
 
-    if(!age||!age < 18){
+    if (!birthday || new Date().getFullYear() - new Date(birthday).getFullYear() < 18){
         alert("You must be 18 years or older to submit this form.");
         return;
     }
     
+    if (password !== confirmpassword) {
+        alert("Passwords do not match.");
+        return;
+    }
+
+    if (state === "blank") {
+        alert("Please select a state.");
+        return;
+    }
+
     const formData={
         fname: first,
         lname: last,
         birthday: age,
-        password: document.getElementById('password').value,
-        state: document.getElementById('state').value
+        password: password,
+        state: state
     };
     
     const xhr = new XMLHttpRequest();
@@ -37,9 +54,4 @@ document.getElementById('myForm').addEventListener('submit',function(event){
             alert('Error submitting the form.');
         }
     };
-    xhr.send(JSON.stringify(formData));
-    alert("I should happen last, right?")
-    console.log(formData);
-    
-
 });
