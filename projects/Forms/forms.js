@@ -1,4 +1,4 @@
-document.getElementById('myForm').addEventListener('submit',function(event){
+document.getElementById('meuForm').addEventListener('submit',function(event){
     event.preventDefault();
     const first = document.getElementById('fname').value;
     const last = document.getElementById('lname').value;
