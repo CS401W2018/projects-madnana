@@ -17,10 +17,11 @@ document.getElementById('meuForm').addEventListener('submit',function(event){
 
     }
 
-    if (!birthday || new Date().getFullYear() - new Date(birthday).getFullYear() < 18){
+    //fix it to match with birthdate
+    /*if (!age||!age < 18){
         alert("You must be 18 years or older to submit this form.");
         return;
-    }
+    }*/
     
     if (password !== confirmpassword) {
         alert("Passwords do not match.");
