@@ -1,0 +1,25 @@
+body{
+    margin:0;
+}
+header{
+    color:#343131;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #47663B;
+    padding: 10px;
+    color:aliceblue
+}
+
+
+footer{
+    background-color: #47663B;
+    padding: 10px;
+    color:aliceblue;
+}
+
+
+body{
+    background-color:#E8ECD7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    
+}
