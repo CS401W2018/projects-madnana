@@ -15,7 +15,7 @@ document.getElementById('meuForm').addEventListener('submit',function(event){
     if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
         calculatedAge--;
     }
-    
+
     if (!age || calculatedAge < 18) {
         alert("You must be 18 years or older to submit this form.");
         return;
@@ -51,7 +51,7 @@ document.getElementById('meuForm').addEventListener('submit',function(event){
     };
     
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "submition.json", true);
+    xhr.open("GET", "submit.json", true);
     xhr.setRequestHeader("Content-Type","application/json;charset=UTF-8");
     xhr.onreadystatechange= function (){
 
