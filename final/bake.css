@@ -28,3 +28,162 @@ nav a{
 nav a:hover{
     text-decoration:underline;
 }
+
+.current{
+    color:#e73827;
+}
+
+/*TABLE*/
+.rate caption{
+    text-align: left;
+}
+
+.rate{
+    margin-top: 20px;
+    border-spacing: 15px;
+    border-collapse: collapse;
+    caption-side: top;
+    box-shadow: 10px 9px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #e86e23;
+}
+
+.rate thead{
+    background-color: #e86e23;
+    color: white;
+}
+
+
+.rate tbody tr:nth-child(odd){
+    background-color: #FFAC79;
+}
+
+.rate tbody tr:nth-child(even){
+    background-color: #F68E4E;
+}
+
+.rate td {
+    padding: 15px;
+}
+
+.rate tfoot {
+    background-color: #e86e23; 
+    color: white;
+    font-weight: bold; 
+    text-align: center;
+}
+/*FORMS*/
+fieldset{
+    background-color: #FFC460;
+    box-shadow: 2px 3px 1px black;
+
+}
+
+legend{
+    background-color: #B87400;
+    padding: 10px;
+    border: thin solid black
+    
+}
+
+
+select {
+    border-radius: 15px;
+    background-color: #ddd;
+}
+
+.form-line{
+    display: flex;
+    gap:15px;
+    margin-top: 15px;
+}
+
+.form-line label{
+    width: 150px;
+    text-align: right;
+    
+}
+.espaco{
+    width:150px;
+    
+}
+
+.form-line, .check-row{
+    display: flex;
+    gap:10px;
+    margin: 10px;
+    
+
+}
+
+textarea[type="submit"]{
+    background-color: #ECDFCC;
+    color: black;
+    padding: 5px;
+    border:0;
+
+}
+
+textarea:not([type="submit"]){
+    background-color:#ddd;
+    color: black;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+textarea:not([type="submit"]):focus{
+    background-color: #fff;
+
+}
+
+select:focus{
+    background-color: #fff;
+
+}
+input[type="submit"]{
+    background-color: #ECDFCC;
+    color: black;
+    padding: 5px;
+    border:0;
+    border-radius: 15px;
+
+}
+
+input:not([type="submit"]){
+    background-color:#ddd;
+    color: black;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 15px;
+}
+
+input:not([type="submit"]):focus{
+    background-color: #fff;
+    
+    
+}
+
+/*SMALL SCREENS*/
+@media only screen and (max-width: 700px){
+
+    header{
+        text-align: center;
+    }
+
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+        
+    nav a{
+        /*border-bottom: thin solid black;*/
+        color:rgb(255, 255, 255);
+    }
+    .form-line, .check-row{
+        flex-direction: column;
+        
+    }
+    .form-line label, .espaco{
+        text-align: left;
+    }
+}
