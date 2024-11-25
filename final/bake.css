@@ -1,13 +1,13 @@
 body{
-    background-color:#F5E7B2;
+    background-color:#f8dc8d;
     margin:0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
-    background-color:#F9D689;
     padding: 20px 20px;
     background: url('capa.jpg') top right no-repeat;
+    background-size: 100%;
     color: aliceblue;
     text-shadow: 3px 3px 3px black;
     text-align: center;
@@ -17,7 +17,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: #855e2d;
+    background-color: #e79406;
 }
 
 nav a{
@@ -27,18 +27,4 @@ nav a{
 
 nav a:hover{
     text-decoration:underline;
-}
-.side{
-    display: flex;
-}
-
-
-aside{
-    width: 40%;
-    margin:10px
-}
-
-aside p{
-    
-    text-align: end; 
 }
