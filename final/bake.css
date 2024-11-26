@@ -162,7 +162,23 @@ input:not([type="submit"]):focus{
     
     
 }
+/*MAIN*/
+.coluna {
+    width: 25%;
+    padding: 11px;
+    height: 458px;
+    width: 200px;
+    border: thin solid black;
+    box-shadow: 5px 5px 0 #000000; 
+    margin: 10px;
+    background-color: #ffffff;
+}
 
+.fila {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 /*SMALL SCREENS*/
 @media only screen and (max-width: 700px){
 
@@ -185,5 +201,8 @@ input:not([type="submit"]):focus{
     }
     .form-line label, .espaco{
         text-align: left;
+    }
+    .fila {
+        flex-direction: column;
     }
 }
