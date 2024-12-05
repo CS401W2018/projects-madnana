@@ -165,7 +165,7 @@ input:not([type="submit"]):focus{
 /*MAIN*/
 .coluna {
     width: 25%;
-    padding: 11px;
+    padding: 12px;
     height: 458px;
     width: 200px;
     border: thin solid black;
