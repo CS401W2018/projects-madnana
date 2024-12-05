@@ -34,6 +34,15 @@ document.getElementById('myForm').addEventListener('submit',function(event){
         birthday: age,
         password: password
     };
+
+    const mensagem = `
+    <h2>Thank you for signing up!</h2>
+    <p><strong>First Name:</strong> ${first}</p>
+    <p><strong>Last Name:</strong> ${last}</p>
+    <p><strong>Username:</strong> ${username}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Birthday:</strong> ${birthday} (Age: ${calculatedAge})</p>
+    <p><strong>Password:</strong> [Hidden for security]</p>`;
     
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "submit.json", true);
@@ -44,6 +53,7 @@ document.getElementById('myForm').addEventListener('submit',function(event){
             const response = JSON.parse(xhr.responseText);
             document.getElementById('message').innerHTML = response.message;
             document.getElementById('myForm').innerHTML="";
+            document.getElementById('mensagem').innerHTML = message;
             alert('You have submitted the form successfully!');
         }
         else if (xhr.readyState === 4){
