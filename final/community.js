@@ -44,12 +44,6 @@ document.getElementById('myForm').addEventListener('submit',function(event){
             const response = JSON.parse(xhr.responseText);
             document.getElementById('message').innerHTML = response.message;
             document.getElementById('myForm').innerHTML="";
-            document.getElementById('message').innerHTML = `
-            <h1>${response.message}</h1>
-            <p><strong>First Name:</strong> ${response.first}</p>
-            <p><strong>Last Name:</strong> ${response.last}</p>
-            <p><strong>Email:</strong> ${response.email}</p>
-            <p><strong>Gender:</strong> ${response.gender}</p>`
             alert('You have submitted the form successfully!');
         }
         else if (xhr.readyState === 4){
