@@ -7,9 +7,10 @@
 <body>
     <main>
     <h1> Thank you for signing up.</h1>
-    <p><strong>First Name:</strong> <?php echo htmlspecialchars($_POST['first']); ?></p>
-    <p><strong>Last Name:</strong> <?php echo htmlspecialchars($_POST['last']); ?></p>
-    <p><strong>Email:</strong> <?php echo htmlspecialchars($_POST['email']); ?></p>
+    <p>First Name: <?php print $_POST['first'] ?> </p>
+    <p>Last Name: <?php print $_POST['last'] ?> </p>
+    <p>Email: <?php print $_POST['email'] ?> </p>
+    <p>Password: <?php print $_POST['pass'] ?> </p>
    </main>
     <footer>
         <p>&copy; 2024 Natalia Madruga</p>
