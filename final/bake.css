@@ -184,6 +184,23 @@ iframe{
     border-width: 0px;
 }
 
+main{
+    padding: 10px;
+}
+
+#recipes{
+    text-align: center;
+    font-size: large;
+}
+.recipe{
+    background-color:#FFC460;
+    box-shadow: 2px 2px 1px;
+    margin: 20px; 
+    border:thin solid #262525;
+    padding-left: 10px;
+    
+}
+
 /*SMALL SCREENS*/
 @media only screen and (max-width: 700px){
 
