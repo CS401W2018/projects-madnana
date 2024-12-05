@@ -227,6 +227,11 @@ main{
     .fila {
         flex-direction: column;
     }
+    table.rate {
+        width: 100%; 
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+    }
     iframe, video {
         width: 100%; 
         height: auto; 
