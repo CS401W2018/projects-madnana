@@ -24,12 +24,10 @@ document.getElementById('myForm').addEventListener('submit',function(event){
         return;
 
     }
-
     if (password !== confirmpassword) {
         alert("Passwords do not match.");
         return;
     }
-
     const formData={
         fname: first,
         lname: last,
@@ -45,7 +43,7 @@ document.getElementById('myForm').addEventListener('submit',function(event){
         if(xhr.readyState === 4 && xhr.status === 200){
             const response = JSON.parse(xhr.response);
             document.getElementById('message').innerHTML = response.message;
-            
+            document.getElementById('meuForm').innerHTML="";
             alert('You have submitted the form successfully!');
         }
         else if (xhr.readyState === 4){
