@@ -227,4 +227,8 @@ main{
     .fila {
         flex-direction: column;
     }
+    iframe, video {
+        width: 100%; 
+        height: auto; 
+    }
 }
