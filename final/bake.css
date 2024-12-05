@@ -204,9 +204,6 @@ main{
 /*SMALL SCREENS*/
 @media only screen and (max-width: 700px){
 
-    body{
-        margin: 0;
-    }
     header{
         text-align: center;
     }
@@ -236,7 +233,7 @@ main{
     }
     
     iframe, video {
-        width: 100%; 
+        width: 70%; 
         height: auto; 
     }
 }
