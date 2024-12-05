@@ -229,7 +229,6 @@ main{
     }
     table.rate {
         width: 100%; 
-        border-collapse: collapse;
         height: auto;
     }
     iframe, video {
