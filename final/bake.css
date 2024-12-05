@@ -230,7 +230,7 @@ main{
     table.rate {
         width: 100%; 
         border-collapse: collapse;
-        margin-bottom: 1rem;
+        height: auto;
     }
     iframe, video {
         width: 100%; 
